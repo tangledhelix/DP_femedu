@@ -15,11 +15,11 @@ cd ~/dp/util
 . venv/bin/activate
 ./make_project.py
 ```
-* [ ] Read the [project comments](https://www.pgdp.net/c/project.php?id=projectID654f9c263a5aa#project-comments)
-* [ ] Subscribe to the [forum topic](https://www.pgdp.net/phpBB3/viewtopic.php?t=80558) and read all posts
-* [ ] Open `femedu-utf8.txt` in Guiguts
-* [ ] Set document language (probably `en`)
-* [ ] `File → Project → Configure Page Labels...`. Check for roman numerals and unnumbered pages. Go to end of book to check page numbers line up.
+* [x] Read the [project comments](https://www.pgdp.net/c/project.php?id=projectID654f9c263a5aa#project-comments)
+* [x] Subscribe to the [forum topic](https://www.pgdp.net/phpBB3/viewtopic.php?t=80558) and read all posts
+* [x] Open `femedu-utf8.txt` in Guiguts
+* [x] Set document language (probably `en`)
+* [x] `File → Project → Configure Page Labels...`. Check for roman numerals and unnumbered pages. Go to end of book to check page numbers line up.
 
 ### Sequential Inspection of Text
 * [ ] Turn on `Auto Img`
