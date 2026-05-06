@@ -48,6 +48,12 @@ Follow the normal [formatting guidelines](https://www.pgdp.net/wiki/DP_Official_
 
 ### Transcriber's notes ###
 
+p. 15: changed “errour” to “error” (Another error is, that it has been made)
+
+p. 28: changed “benificial” to “beneficial” (most beneficial control over common schools)
+
+p. 29: changed “analagy” to “analogy” (deceived by a false analogy)
+
 ### HTML file review ###
 The iPhone/iPad simulators can't use `file://` URLs. Start a local web server with `python3 -m http.server` in the project directory and going to `localhost:8000` in Safari on the device. 
 
