@@ -46,9 +46,11 @@ Follow the normal [formatting guidelines](https://www.pgdp.net/wiki/DP_Official_
 
 ### Spellcheck ###
 
-### Transcriber's notes ###
+errour (p. 15): Obsolete spelling of `error` per [Wiktionary](https://en.wiktionary.org/wiki/errour), [Johnson's Dictionary](https://johnsonsdictionaryonline.com/1755/errour%5Fns).
 
-p. 15: changed “errour” to “error” (Another error is, that it has been made)
+existencies (p. 15): Plural of `existency`, which is an archaic form of `existence`, per [Wiktionary](https://en.wiktionary.org/wiki/existency#English).
+
+### Transcriber's notes ###
 
 p. 28: changed “benificial” to “beneficial” (most beneficial control over common schools)
 
