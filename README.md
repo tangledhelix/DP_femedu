@@ -52,6 +52,8 @@ existencies (p. 15): Plural of `existency`, which is an archaic form of `existen
 
 ### Transcriber's notes ###
 
+p. 15: archaic spellings “errour”  and “existencies” left as printed.
+
 p. 28: changed “benificial” to “beneficial” (most beneficial control over common schools)
 
 p. 29: changed “analagy” to “analogy” (deceived by a false analogy)
