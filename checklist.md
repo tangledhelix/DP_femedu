@@ -195,24 +195,24 @@ We now proceed to create a Plain Text Version of the book.
   * [x] Convert [smallcaps](https://www.pgdp.net/wiki/DP_Official_Documentation:PP_and_PPV/Guide_to_smallcaps).
 
 ### Fix ASCII Tables
-* [ ] Search for `/[xX*]` and step through any tables
+* [x] Search for `/[xX*]` and step through any tables
   * Compare to page image; reformat to best convey author intent.
   * DO NOT REMOVE REWRAP MARKERS.
   * To indent entire table during rewrap, change opening rewrap marker to e.g. `/*[4]` for 4-space indent.
     * Note that `/X` will not honor an indent modifier; `/X` never indents.
   * For complex tables, try using `Txt → ASCII Table Effects` to reformat?
-* [ ] Try this regex to validate that all border characters were replace with box drawing `[=+|-]`
+* [x] Try this regex to validate that all border characters were replace with box drawing `[=+|-]`
 
 ### Rewrap and Clear Rewrap Markers
-* [ ] Search for `^/[*$pcrflxi]` (regex, no match-case) and make any desired [rewrap marker](https://www.pgdp.net/wiki/PPTools/Guiguts/Guiguts_Manual/Tools_Menu#Rewrap_Markers) changes before wrapping
-* [ ] Save the file if any unsaved changes.
-* [ ] `Tools → Rewrap All`.
-* [ ] Page through entire text, looking for improper indentation. If found, re-open, clicking NO when asked if you want to save the edits. Find and fix broken rewrap markups. Repeat `Tools → Rewrap All`.
-* [ ] Search `  [Footnote` (no regex; 2 leading spaces) to find footnotes in blockquotes; move them out of the blockquote.
-* [ ] Under `Tools → Footnote Fixup`, use `Tidy Footnotes`.
+* [x] Search for `^/[*$pcrflxi]` (regex, no match-case) and make any desired [rewrap marker](https://www.pgdp.net/wiki/PPTools/Guiguts/Guiguts_Manual/Tools_Menu#Rewrap_Markers) changes before wrapping
+* [x] Save the file if any unsaved changes.
+* [x] `Tools → Rewrap All`.
+* [x] Page through entire text, looking for improper indentation. If found, re-open, clicking NO when asked if you want to save the edits. Find and fix broken rewrap markups. Repeat `Tools → Rewrap All`.
+* [x] Search `  [Footnote` (no regex; 2 leading spaces) to find footnotes in blockquotes; move them out of the blockquote.
+* [x] Under `Tools → Footnote Fixup`, use `Tidy Footnotes`.
   * NOTE: tidy footnotes will rewrap footnote text not protected by wrap markers; so they are not removed until the next step.
-* [ ] `Tools → Clean Up Rewrap Markers`.
-* [ ] Rerun Bookloupe or pptext. Resolve any new issues.
+* [x] `Tools → Clean Up Rewrap Markers`.
+* [x] Rerun Bookloupe or pptext. Resolve any new issues.
 
 ### Final checks
 * [ ] Search for `<` and `>` to locate any tag markup not yet removed.
