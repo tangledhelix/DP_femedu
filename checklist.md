@@ -139,12 +139,12 @@ Instructions for `/* */` and `/# #/` blocks:
 * [x] `Tools → Regex Library`. Run my custom `misc_checks.json`.
 
 ### Apply Bookloupe
-* [ ] `Tools → Bookloupe`.
+* [x] `Tools → Bookloupe`.
 
 ### Spelling and Distance Checks
-* [ ] If any languages known to be in the book aren't in the Lang: setting, add them (e.g. `en+fr`). Only tag languages we have a dictionary for. (More dictionaries are available; see [the wiki](https://www.pgdp.net/wiki/PPTools/Guiguts/Guiguts_2_Manual/Tools_Menu#Spelling).)
-* [ ] Use `Tools → Spelling`. Proceed through the document, correcting words or adding them to the project dictionary as appropriate.
-* [ ] Use `Tools → Word Distance Check`.
+* [x] If any languages known to be in the book aren't in the Lang: setting, add them (e.g. `en+fr`). Only tag languages we have a dictionary for. (More dictionaries are available; see [the wiki](https://www.pgdp.net/wiki/PPTools/Guiguts/Guiguts_2_Manual/Tools_Menu#Spelling).)
+* [x] Use `Tools → Spelling`. Proceed through the document, correcting words or adding them to the project dictionary as appropriate.
+* [x] Use `Tools → Word Distance Check`.
 
 ### Fix Sidenotes
 * [ ] Read the [discussion](https://www.pgdp.net/wiki/PPTools/Guiguts/Fixup#Sidenotes). Step through sidenotes with: Search & Replace of `[S`, not regex, not whole word, ignore case. Click `Search` to find each Sidenote.
