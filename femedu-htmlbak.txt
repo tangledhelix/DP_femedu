@@ -1,357 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
-    <title>
-      A plan for improving female education | Project Gutenberg
-    </title>
-    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
-    <style>
-
-body {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    text-align: center; /* all headings centered */
-    clear: both;
-}
-
-p {
-    margin-top: .5em;
-    text-align: justify;
-    margin-bottom: .5em;
-}
-
-.p2       {margin-top: 2em;}
-.p4       {margin-top: 4em;}
-.p6       {margin-top: 6em;}
-
-hr {
-    width: 33%;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: 33.5%;
-    margin-right: 33.5%;
-    clear: both;
-}
-
-hr.tb   {width: 45%; margin-left: 27.5%; margin-right: 27.5%;}
-hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
-@media print { hr.chap {display: none; visibility: hidden;} }
-hr.full {width: 95%; margin-left: 2.5%; margin-right: 2.5%;}
-
-hr.r5  {width: 5%; margin-top: 1em; margin-bottom: 1em; margin-left: 47.5%; margin-right: 47.5%;}
-hr.r65 {width: 65%; margin-top: 3em; margin-bottom: 3em; margin-left: 17.5%; margin-right: 17.5%;}
-
-div.chapter {page-break-before: always;}
-h2.nobreak  {page-break-before: avoid;}
-
-ul.index { list-style-type: none; }
-li.ifrst {
-    margin-top: 1em;
-    text-indent: -2em;
-    padding-left: 1em;
-}
-li.indx  {
-    margin-top: .5em;
-    text-indent: -2em;
-    padding-left: 1em;
-}
-li.isub1 {
-    text-indent: -2em;
-    padding-left: 2em;
-}
-li.isub2 {
-    text-indent: -2em;
-    padding-left: 3em;
-}
-li.isub3 {
-    text-indent: -2em;
-    padding-left: 4em;
-}
-li.isub4 {
-    text-indent: -2em;
-    padding-left: 5em;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-table.autotable    { border-collapse: collapse; }
-table.autotable td,
-table.autotable th { padding: 0.25em; }
-
-.tdl      {text-align: left;}
-.tdr      {text-align: right;}
-.tdc      {text-align: center;}
-
-.pagenum { /* uncomment the next line for invisible page numbers */
-    /*  visibility: hidden;  */
-    position: absolute;
-    left: 92%;
-    font-size: small;
-    text-align: right;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-indent: 0;
-} /* page numbers */
-
-.linenum {
-    position: absolute;
-    top: auto;
-    left: 4%;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-} /* poetry number */
-
-blockquote {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 5%;
-    margin-right: 10%;
-}
-
-.sidenote {
-    width: 20%;
-    padding-bottom: .5em;
-    padding-top: .5em;
-    padding-left: .5em;
-    padding-right: .5em;
-    margin-left: 1em;
-    float: right;
-    clear: right;
-    margin-top: 1em;
-    font-size: small;
-    color: black;
-    background: #eeeeee;
-    border: 1px dashed;
-}
-
-.bb       {border-bottom: 2px solid;}
-
-.bl       {border-left: 2px solid;}
-
-.bt       {border-top: 2px solid;}
-
-.br       {border-right: 2px solid;}
-
-.bbox     {border: 2px solid;}
-
-.center   {text-align: center; text-indent: 0;}
-
-.right    {text-align: right;}
-
-.smcap    {font-variant: small-caps;}
-
-.allsmcap {font-variant: small-caps; text-transform: lowercase;}
-
-.u        {text-decoration: underline;}
-
-.gesperrt
-{
-    font-style: normal;
-    letter-spacing: 0.2em;
-    margin-right: -0.2em;
-}
-.x-ebookmaker-2 .gesperrt {
-    font-style: italic;
-    letter-spacing: normal;
-    margin-right: 0em;
-}
-
-figcaption   {font-weight: bold;}
-figcaption p {margin-top: 0; margin-bottom: .2em; text-align: inherit;}
-
-/* Images */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-img.w100 {width: 100%;}
 
 
-.figcenter {
-    margin: auto;
-    text-align: center;
-    page-break-inside: avoid;
-    max-width: 100%;
-}
-
-.figleft {
-    float: left;
-    clear: left;
-    margin-left: 0;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    margin-right: 1em;
-    padding: 0;
-    text-align: center;
-    page-break-inside: avoid;
-    max-width: 100%;
-}
-/* comment out next line and uncomment the following one for floating figleft on ebookmaker output */
-.x-ebookmaker .figleft {float: none; text-align: center; margin-right: 0;}
-/* .x-ebookmaker .figleft {float: left;} */
-
-.figright {
-    float: right;
-    clear: right;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    margin-right: 0;
-    padding: 0;
-    text-align: center;
-    page-break-inside: avoid;
-    max-width: 100%;
-}
-/* comment out next line and uncomment the following one for floating figright on ebookmaker output */
-.x-ebookmaker .figright {float: none; text-align: center; margin-left: 0;}
-/* .x-ebookmaker .figright {float: right;} */
-
-/* Footnotes */
-.footnotes        {border: 1px dashed;}
-
-.footnote         {margin-left: 10%; margin-right: 10%; font-size: 0.9em;}
-
-.footnote .label  {position: absolute; right: 84%; text-align: right;}
-
-.fnanchor {
-    vertical-align: super;
-    font-size: .8em;
-    text-decoration:
-    none;
-}
-
-/* Poetry */
-/* uncomment the next line for centered poetry */
-/* .poetry-container {display: flex; justify-content: center;} */
-.poetry-container {text-align: center;}
-.poetry           {text-align: left; margin-left: 5%; margin-right: 5%;}
-.poetry .stanza   {margin: 1em auto;}
-.poetry .verse    {text-indent: -3em; padding-left: 3em;}
-
-/* Transcriber's notes */
-.transnote {background-color: #E6E6FA;
-    color: black;
-    font-size:small;
-    padding:0.5em;
-    margin-bottom:5em;
-    font-family:sans-serif, serif;
-}
 
 
-/* indent paragraphs */
-p { text-indent: 1em; }
-p.noindent { text-indent: 0; }
+/F
+A PLAN
 
-/* de-emphasize page numbers */
-.pagenum { color: #bbbbbb; }
+FOR
 
-/* footnote block styling */
-.footnotes {
-    border: 1px dashed #aaaaaa;
-    margin-top: 1.5em;
-}
-
-/* TN styling */
-.transnote {
-    background-color: inherit;
-    border: 1px dashed #bbbbbb;
-    margin-top: 3em;
-    page-break-before: always;
-}
-
-/* Don't visibly style abbr tags. Browsers usually underline them. */
-abbr {
-    text-decoration: none;
-}
-/* abbrs that should be read letter-by-letter */
-abbr.spell { speak: spell-out; }
-
-/* "gray bar" blockquotes */
-blockquote {
-    border-left: .15em solid #c8c8c8;
-    padding-left: .7em;
-    margin-left: 4%;
-    margin-right: 8%;
-}
-
-/* don't wrap; better than invisible word joiner char? */
-.nowrap { white-space: nowrap; }
-
-/* remove italic styling, e.g. on a <cite> */
-.nonitalic { font-style: normal; }
-
-/* hanging indent */
-.hanging2 {
-  padding-left: 2em;
-  text-indent: -2em;
-}
-
-/* drop caps */
-p.drop-cap { text-indent: 0em; }
-p.drop-cap::first-letter {
-  float: left;
-  margin: 0 0.1em 0 0;
-  font-size: 250%;
-  line-height:0.85em;
-}
-.uppercase { text-transform: uppercase; }
-
-/* disable drop caps for EPUB2 */
-.x-ebookmaker-2  p.drop-cap::first-letter {
-  float: none;
-  margin: 0;
-  font-size: 100%;
-}
-
-
-    </style>
-</head>
-<body>
-
-
-<p><span class="pagenum" id="Page_1">[Pg 1]</span></p>
-
-<h1>
-A PLAN<br>
-<br>
-FOR<br>
-<br>
 Improving Female Education
-</h1>
 
+By Emma Willard
 
-<p class="center">By Emma Willard</p>
+A Reprint of the Second Edition of 1819
 
-<p class="center">A Reprint of the Second Edition of 1819</p>
+“My neighborhood to Middlebury College made me bitterly
+feel the disparity in educational facilities between the sexes.”
 
-<p class="center">“My neighborhood to Middlebury College made me bitterly
-feel the disparity in educational facilities between the sexes.”</p>
+<i>From a letter of Mrs. Willard</i>
 
-<p class="center"><i>From a letter of Mrs. Willard</i></p>
-
-<p class="center"><i>Published by Middlebury College on the
+<i>Published by Middlebury College on the
 100th anniversary of the issue
-of the first edition</i></p>
+of the first edition</i>
 
-<p class="center"><span class="smcap">Middlebury, Vermont</span>
-1918</p>
-
-
-<p><span class="pagenum" id="Page_2">[Pg 2]</span></p>
+<sc>Middlebury, Vermont</sc>
+1918
+F/
 
 
-<p><i>The following pages reproduce without change a document
+<i>The following pages reproduce without change a document
 which has been called the Magna Carta of the
 higher education of women in America. It was written
 during the two or three years preceding 1819 in Middlebury,
@@ -364,9 +40,9 @@ worthier education offered to young men in the college
 that she developed her conviction of the need of radical
 change in the education of women and the principles
 she put in force in her second school in Middlebury,
-which was later removed to Troy.</i></p>
+which was later removed to Troy.</i>
 
-<p><i>The world war and its attendant changes in the position
+<i>The world war and its attendant changes in the position
 and occupations of women is leading to a re-examination
 of the purposes and methods of women’s education.
 This notable address of one of the great pioneers
@@ -377,12 +53,13 @@ to its author, but also as a statement of principles
 and ideals which ought not to be neglected in the effort
 to adapt the higher education of women to the larger
 place in the life of the world which they are henceforth
-to occupy.</i></p>
-
-<p><span class="pagenum" id="Page_3">[Pg 3]</span></p>
+to occupy.</i>
 
 
-<p class="center">AN
+
+
+/F
+AN
 ADDRESS
 TO THE PUBLIC;
 PARTICULARLY
@@ -393,42 +70,36 @@ NEW-YORK,
 PROPOSING
 A PLAN
 FOR IMPROVING
-FEMALE EDUCATION.</p>
+FEMALE EDUCATION.
 
-<p class="center">BY EMMA WILLARD.</p>
+BY EMMA WILLARD.
 
-<p class="center">SECOND EDITION.</p>
+SECOND EDITION.
 
-<p class="center">MIDDLEBURY:
+MIDDLEBURY:
 PRINTED BY J. W. COPELAND,
-1819.</p>
+1819.
+F/
 
 
-<hr class="chap x-ebookmaker-drop">
-<div class="chapter">
-
-<p><span class="pagenum" id="Page_4">[Pg 4]</span></p>
 
 
-  <h2 class="nobreak" id="Explanatory_Note">
-    Explanatory Note
-  </h2>
-</div>
+Explanatory Note
 
 
-<p>Timely interest in the enclosed pamphlet written by Emma Willard,
+Timely interest in the enclosed pamphlet written by Emma Willard,
 pioneer in the education of women at Middlebury, Vermont, over
 100 years ago, is given by the fact that Mrs. Russell Sage, who was a
 great admirer of the work of Mrs. Willard, has just left to Middlebury
-College the sum of $100,000.</p>
+College the sum of $100,000.
 
-<p><i>The Middlebury Register</i> in its issue of November 22, 1918, contains
+<i>The Middlebury Register</i> in its issue of November 22, 1918, contains
 the following interesting statement by Dr. Ezra Brainerd, president-emeritus
 of the College, indicating how Mrs. Sage became interested
-in Middlebury:</p>
+in Middlebury:
 
-<blockquote>
-<p>“About thirty years ago I received an invitation to give a talk on
+/#
+“About thirty years ago I received an invitation to give a talk on
 the life and work of Emma Willard during the twelve years she lived
 in Middlebury when from 20 to 32 years of age. This talk was to be
 given before the Emma Willard Association in New York City, at the
@@ -446,32 +117,25 @@ the expense of a New York lawyer, a former pupil of mine, whose
 mother in Vermont was a graduate of the Troy Seminary. The pamphlet
 passed through two editions of 500 copies each, most of which
 were placed in the hands of Mrs. Sage for distribution to the graduates
-of the Troy Seminary.</p>
+of the Troy Seminary.
 
-<p>“This pamphlet was later republished by the United States Bureau
+“This pamphlet was later republished by the United States Bureau
 of Education, Circular of Information No. 4, 1900; whole number
 265. On page 130, under the headline of the article, the reader is informed
 that it was ‘prepared originally for the Emma Willard Society
-of New York by Ezra Brainerd, LL. D., President of Middlebury College.’</p>
+of New York by Ezra Brainerd, LL. D., President of Middlebury College.’
 
-<p>“Thus it would appear probable that the 100,000 dollar bequest is
-the fair fruitage of the humble seed sown in faith so many years ago.”</p>
-</blockquote>
-
-
-<hr class="chap x-ebookmaker-drop">
-<div class="chapter">
-
-<p><span class="pagenum" id="Page_5">[Pg 5]</span></p>
+“Thus it would appear probable that the 100,000 dollar bequest is
+the fair fruitage of the humble seed sown in faith so many years ago.”
+#/
 
 
-  <h2 class="nobreak" id="ADDRESS_C">
-    ADDRESS, &amp;C.
-  </h2>
-</div>
 
 
-<p>The object of this Address, is to convince the
+ADDRESS, &C.
+
+
+The object of this Address, is to convince the
 public, that a reform, with respect to female
 education, is necessary; that it cannot be
 effected by individual exertion, but that it
@@ -479,9 +143,9 @@ requires the aid of the legislature; and further, by
 shewing the justice, the policy, and the magnanimity
 of such an undertaking, to persuade that body to endow
 a seminary for females, as the commencement of
-such reformation.</p>
+such reformation.
 
-<p>The idea of a college for males will naturally be
+The idea of a college for males will naturally be
 associated with that of a seminary, instituted and endowed
 by the public; and the absurdity of sending
 ladies to college, may, at first thought, strike every one
@@ -492,30 +156,30 @@ other sex, as the female character and duties are from
 the male. The business of the husbandman is not to
 waste his endeavours, in seeking to make his orchard
 attain the strength and majesty of his forest, but to
-rear each, to the perfection of its nature.</p>
+rear each, to the perfection of its nature.
 
-<p>That the improvement of female education will be
+That the improvement of female education will be
 considered by our enlightened citizens as a subject of
 importance, the liberality with which they part with
 their property to educate their daughters, is a sufficient
 evidence; and why should they not, when assembled
 in the legislature, act in concert to effect a noble object,
 which, though dear to them individually, cannot be
-accomplished by their unconnected exertions.</p>
+accomplished by their unconnected exertions.
 
-<p>If the improvement of the American female character,
+If the improvement of the American female character,
 and that alone, could be effected by public liberality,
 employed in giving better means of instruction;
-<span class="pagenum" id="Page_6">[Pg 6]</span>such improvement of one half of society, and that half,
+such improvement of one half of society, and that half,
 which barbarous and despotic nations have ever degraded,
 would of itself be an object, worthy of the most
 liberal government on earth; but if the female character
 be raised, it must inevitably raise that of the other sex:
 and thus does the plan proposed, offer, as the object of
 legislative bounty, to elevate the whole character of the
-community.</p>
+community.
 
-<p>As evidence that this statement does not exaggerate
+As evidence that this statement does not exaggerate
 the female influence in society, our sex need but be considered,
 in the single relation of mothers. In this character,
 we have the charge of the whole mass of individuals,
@@ -533,39 +197,35 @@ of the importance of those early impressions, which we
 make upon the minds of our children?—or how should
 we be able to form enlarged and correct views, either
 of the character, to which we ought to mould them, or
-of the means most proper to form them aright?</p>
+of the means most proper to form them aright?
 
-<p>Considered in this point of view, were the interests
+Considered in this point of view, were the interests
 of male education alone to be consulted, that of females
 becomes of sufficient importance to engage the public
 attention. Would we rear the human plant to its perfection,
 we must first fertilize the soil which produces
 it. If it acquire its first bent and texture upon a barren
 plain, it will avail comparatively little, should it be
-afterwards transplanted to a garden.</p>
+afterwards transplanted to a garden.
 
-<p><span class="pagenum" id="Page_7">[Pg 7]</span></p>
+In the arrangement of my remarks, I shall pursue the
+following order.
 
-<p>In the arrangement of my remarks, I shall pursue the
-following order.</p>
+I. Treat of the defects of the present mode of female
+education, and their causes.
 
-<p>I. Treat of the defects of the present mode of female
-education, and their causes.</p>
+II. Consider the principles, by which education
+should be regulated.
 
-<p>II. Consider the principles, by which education
-should be regulated.</p>
+III. Sketch a plan of a female seminary.
 
-<p>III. Sketch a plan of a female seminary.</p>
-
-<p>IV. Shew the benefits which society would receive
-from such seminaries.</p>
+IV. Shew the benefits which society would receive
+from such seminaries.
 
 
-<h3 id="DEFECTS_IN_THE_PRESENT_MODE_OF_FEMALE_EDUCATION_AND_THEIR_CAUSES">
-  DEFECTS IN THE PRESENT MODE OF FEMALE EDUCATION, AND THEIR CAUSES.
-</h3>
+DEFECTS IN THE PRESENT MODE OF FEMALE EDUCATION, AND THEIR CAUSES.
 
-<p>Civilized nations have long since been convinced that
+Civilized nations have long since been convinced that
 education, as it respects males, will not, like trade, regulate
 itself; and hence, they have made it a prime object
 to provide that sex with everything requisite to facilitate
@@ -574,9 +234,9 @@ has been left to the mercy of private adventurers; and
 the consequence has been to our sex, the same, as it
 would have been to the other, had legislatures left their
 accommodations, and means of instruction, to chance
-also.</p>
+also.
 
-<p>Education cannot prosper in any community, unless,
+Education cannot prosper in any community, unless,
 from the ordinary motives which actuate the human
 mind, the best and most cultivated talents of that community,
 can be brought into exercise in that way. Male
@@ -587,25 +247,25 @@ eye of ambition is directed. Not so with female institutions.
 Preceptresses of these, are dependent on their
 pupils for support, and are consequently liable to become
 the victims of their caprice. In such a situation, it
-<span class="pagenum" id="Page_8">[Pg 8]</span>is not more desirable to be a preceptress, than it would
+is not more desirable to be a preceptress, than it would
 be, to be a parent, invested with the care of children,
 and responsible for their behaviour, but yet, depending
 on them for subsistence, and destitute of power to enforce
-their obedience.</p>
+their obedience.
 
-<p>Feminine delicacy requires, that girls should be educated
+Feminine delicacy requires, that girls should be educated
 chiefly by their own sex. This is apparent from
 considerations, that regard their health and conveniences,
 the propriety of their dress and manners, and
-their domestic accomplishments.</p>
+their domestic accomplishments.
 
-<p>Boarding schools, therefore, whatever may be their
+Boarding schools, therefore, whatever may be their
 defects, furnish the best mode of education provided for
-females.</p>
+females.
 
-<p>Concerning these schools it may be observed:</p>
+Concerning these schools it may be observed:
 
-<p>1. They are temporary institutions, formed by individuals,
+1. They are temporary institutions, formed by individuals,
 whose object is present emolument. But they
 cannot be expected to be greatly lucrative; therefore,
 the individuals who establish them, cannot afford to
@@ -615,19 +275,19 @@ rooms; and during the day they are generally placed
 together in one apartment, where there is a heterogeneous
 mixture of different kinds of business, accompanied
 with so much noise and confusion, as greatly to
-impede their progress in study.</p>
+impede their progress in study.
 
-<p>2. As individuals cannot afford to provide suitable
+2. As individuals cannot afford to provide suitable
 accommodations as to room, so neither can they afford
 libraries, and other apparatus, necessary to teach properly
-the various branches in which they pretend to instruct.</p>
+the various branches in which they pretend to instruct.
 
-<p>3. Neither can the individuals who establish these
+3. Neither can the individuals who establish these
 schools afford to provide suitable instruction. It not
 unfrequently happens, that one instructress teaches, at
 the same time and in the same room, ten or twelve distinct
 branches. If assistants are provided, such are
-<span class="pagenum" id="Page_9">[Pg 9]</span>usually taken as can be procured for a small compensation.
+usually taken as can be procured for a small compensation.
 True, in our large cities, preceptresses provide
 their pupils with masters, though at an expense, which
 few can afford. Yet none of these masters are responsible
@@ -636,9 +296,9 @@ pupils. Their only responsibility, is in the particular
 branch which they teach; and to a preceptress, who
 probably does not understand it herself, and who is,
 therefore incapable of judging, whether or not it is well
-taught.</p>
+taught.
 
-<p>4. It is impossible, that in these schools such systems
+4. It is impossible, that in these schools such systems
 should be adopted and enforced, as are requisite
 for properly classing the pupils. Institutions for young
 gentlemen are founded by public authority, and are permanent;
@@ -661,18 +321,16 @@ permanency, and dependent on individual patronage,
 had they the wisdom to make salutary regulations, they
 could neither enforce nor purchase compliance. The
 pupils are irregular in their times of entering and leaving
-school; and they are of various and dissimilar acquirements.</p>
+school; and they are of various and dissimilar acquirements.
 
-<p><span class="pagenum" id="Page_10">[Pg 10]</span></p>
-
-<p>Each scholar, of mature age, thinks she has a right to
+Each scholar, of mature age, thinks she has a right to
 judge for herself respecting what she is to be taught;
 and the parents of those, who are not, consider, that
 they have the same right to judge for them. Under
 such disadvantages, a school cannot be classed, except
-in a very imperfect manner.</p>
+in a very imperfect manner.
 
-<p>5. It is for the interest of instructresses of boarding
+5. It is for the interest of instructresses of boarding
 schools, to teach their pupils showy accomplishments,
 rather than those, which are solid and useful. Their
 object in teaching is generally present profit. In order
@@ -689,9 +347,9 @@ benefit remain to them, of perhaps the only money, that
 will ever be expended on their education; but the object
 of the instructress may be accomplished notwithstanding,
 if that is directed to her own, rather than her
-pupil’s advantage.</p>
+pupil’s advantage.
 
-<p>6. As these schools are private establishments,
+6. As these schools are private establishments,
 their preceptresses are not accountable to any particular
 persons. Any woman has a right to open a school
 in any place; and no one, either from law or custom,
@@ -702,7 +360,7 @@ asserting that this is always the case. It has been before
 observed, that in the present state of things, the
 ordinary motives which actuate the human mind, would
 not induce ladies of the best and most cultivated talents,
-<span class="pagenum" id="Page_11">[Pg 11]</span>to engage in the business of instructing, from
+to engage in the business of instructing, from
 choice. But some have done it from necessity, and
 occasionally, an extraordinary female has occupied herself
 in instructing, because she felt that impulse to be
@@ -713,20 +371,20 @@ such has been the fact, it has not been the consequence
 of any system, from which a similar result can be expected
 to recur with regularity; and it remains true,
 that the public are liable to imposition, both with regard
-to the character and acquirements of preceptresses.</p>
+to the character and acquirements of preceptresses.
 
-<p>Instances have lately occurred, in which women of
+Instances have lately occurred, in which women of
 bad reputation, at a distance from scenes of their former
 life, have been entrusted by our unsuspecting citizens
-with the instruction of their daughters.</p>
+with the instruction of their daughters.
 
-<p>But the moral reputation of individuals, is more a
+But the moral reputation of individuals, is more a
 matter of public notoriety than their literary attainments;
 hence society are more liable to be deceived
 with regard to the acquirements of instructresses than
-with respect to their characters.</p>
+with respect to their characters.
 
-<p>Those women, however, who deceive society as to
+Those women, however, who deceive society as to
 the advantages which they give their pupils, are not
 charged with any ill intention. They teach as they
 were taught, and believe that the public are benefitted
@@ -739,10 +397,10 @@ receives; for they show, that the worst which is to be
 expected from such instruction, is not that the pupils
 will remain ignorant; but that, by adopting the views
 of their teachers, they will have their minds barred
-<span class="pagenum" id="Page_12">[Pg 12]</span>against future improvement, by acquiring a disrelish,
-if not a contempt for useful knowledge.</p>
+against future improvement, by acquiring a disrelish,
+if not a contempt for useful knowledge.
 
-<p>7. Although, from a want of public support, preceptresses
+7. Although, from a want of public support, preceptresses
 of boarding schools have not the means of
 enforcing such a system as would lead to a perfect
 classification of their pupils; and although they are
@@ -750,61 +408,57 @@ confined in other respects within narrow limits, yet,
 because these establishments are not dependant on
 any public body, within those limits, they have a power
 far more arbitrary and uncontrolled, than is allowed the
-learned and judicious instructors of our male seminaries.</p>
+learned and judicious instructors of our male seminaries.
 
-<p>They can, at their option, omit their own duties, and
-excuse their pupils from theirs.</p>
+They can, at their option, omit their own duties, and
+excuse their pupils from theirs.
 
-<p>They can make absurd and ridiculous regulations.</p>
+They can make absurd and ridiculous regulations.
 
-<p>They can make improper and even wicked exactions
-of their pupils.</p>
+They can make improper and even wicked exactions
+of their pupils.
 
-<p>Thus the writer has endeavoured to point out the
+Thus the writer has endeavoured to point out the
 defects of the present mode of female education; chiefly
 in order to show, that the great cause of these defects
 consists in a state of things, in which legislatures,
 undervaluing the importance of women in society, neglect
 to provide for their education, and suffer it to become
 the sport of adventurers for fortune, who may be
-both ignorant and vicious.</p>
+both ignorant and vicious.
 
 
-<h3 id="OF_THE_PRINCIPLES_BY_WHICH_EDUCATION_SHOULD_BE_REGULATED">
-  OF THE PRINCIPLES BY WHICH EDUCATION SHOULD BE REGULATED.
-</h3>
+OF THE PRINCIPLES BY WHICH EDUCATION SHOULD BE REGULATED.
 
-<p>To contemplate the principles which should regulate
+To contemplate the principles which should regulate
 systems of instruction, and consider how little those
 principles have been regarded in educating our sex,
 will show the defects of female education in a still
 stronger point of light, and will also afford a standard,
-by which any plan for its improvement may be measured.</p>
+by which any plan for its improvement may be measured.
 
-<p><span class="pagenum" id="Page_13">[Pg 13]</span></p>
-
-<p>Education should seek to bring its subjects to the
+Education should seek to bring its subjects to the
 perfection of their moral, intellectual and physical nature:
 in order, that they may be of the greatest possible
 use to themselves and others: or, to use a different expression,
 that they may be the means of the greatest
 possible happiness of which they are capable, both as
-to what they enjoy, and what they communicate.</p>
+to what they enjoy, and what they communicate.
 
-<p>Those youth have the surest chance of enjoying and
+Those youth have the surest chance of enjoying and
 communicating happiness, who are best qualified, both
 by internal dispositions, and external habits, to perform
 with readiness, those duties, which their future life will
-most probably give them occasion to practice.</p>
+most probably give them occasion to practice.
 
-<p>Studies and employments should, therefore, be selected,
+Studies and employments should, therefore, be selected,
 from one or both of the following considerations;
 either, because they are peculiarly fitted to improve
 the faculties; or, because they are such, as the
 pupil will most probably have occasion to practise in
-future life.</p>
+future life.
 
-<p>These are the principles, on which systems of male
+These are the principles, on which systems of male
 education are founded; but female education has not
 yet been systematized. Chance and confusion reign
 here. Not even is youth considered in our sex, as in
@@ -821,14 +475,14 @@ treasure up for future use the riches of ancient wisdom;
 or to gather strength and expansion of mind, in
 exploring the wonderful paths of philosophy. When
 the youth of two sexes has been spent so differently, is
-<span class="pagenum" id="Page_14">[Pg 14]</span>it strange, or is nature in fault, if more mature age has
+it strange, or is nature in fault, if more mature age has
 brought such a difference of character, that our sex
 have been considered by the other, as the pampered,
 wayward babies of society, who must have some rattle
 put into our hands, to keep us from doing mischief to
-ourselves or others?&#x2060;<a id="FNanchor_1_1" href="#Footnote_1_1" class="fnanchor">[1]</a>&#x2060;</p>
+ourselves or others?[1]
 
-<p>Another difference in the treatment of the sexes is
+Another difference in the treatment of the sexes is
 made in our country, which, though not equally pernicious
 to society, is more pathetically unjust to our
 sex. How often have we seen a student, who, returning
@@ -840,13 +494,13 @@ means, she, without any object of improvement,
 drudged at home, to assist in the support of the father’s
 family, and perhaps to contribute to her brother’s subsistence
 abroad; and now, a being of a lower order, the
-rustic innocent wonders and weeps at his neglect.</p>
+rustic innocent wonders and weeps at his neglect.
 
-<p>Not only has there been a want of system concerning
+Not only has there been a want of system concerning
 female education, but much of what has been done, has
-proceeded upon mistaken principles.</p>
+proceeded upon mistaken principles.
 
-<p>One of these is, that, without a regard to the different
+One of these is, that, without a regard to the different
 periods of life, proportionate to their importance,
 the education of females has been too exclusively directed,
 to fit them for displaying to advantage the
@@ -856,10 +510,10 @@ important, to prepare for the serious duties of maturer
 years. Though well to decorate the blossom, it is far
 better to prepare for the harvest. In the vegetable creation,
 nature seems but to sport, when she embellishes
-<span class="pagenum" id="Page_15">[Pg 15]</span>the flower; while all her serious cares are directed to
-perfect the fruit.</p>
+the flower; while all her serious cares are directed to
+perfect the fruit.
 
-<p>Another errour is, that it has been made the first
+Another errour is, that it has been made the first
 object in educating our sex, to prepare them to please
 the other. But reason and religion teach, that we too
 are primary existencies; that it is for us to move, in the
@@ -867,9 +521,9 @@ orbit of our duty, around the Holy Centre of perfection,
 the companions, not the satellites of men; else,
 instead of shedding around us an influence, that may
 help to keep them in their proper course, we must accompany
-them in their wildest deviations.</p>
+them in their wildest deviations.
 
-<p>I would not be understood to insinuate, that we are
+I would not be understood to insinuate, that we are
 not, in particular situations, to yield obedience to the
 other sex. Submission and obedience belong to every
 being in the universe, except the great Master of the
@@ -888,13 +542,13 @@ neither the child, nor the subject, nor the wife, under
 human authority, but in subservience to the divine.
 Our highest responsibility is to God, and our highest
 interest is to please him; therefore, to secure this interest,
-should our education be directed.</p>
+should our education be directed.
 
-<p>Neither would I be understood to mean, that our sex
+Neither would I be understood to mean, that our sex
 should not seek to make themselves agreeable to the
 other. The errour complained of, is that the taste of
 men, whatever it might happen to be, has been made a
-<span class="pagenum" id="Page_16">[Pg 16]</span>standard for the formation of the female character. In
+standard for the formation of the female character. In
 whatever we do, it is of the utmost importance, that the
 rule, by which we work, be perfect. For if otherwise,
 what is it, but to err upon principle? A system of education,
@@ -903,9 +557,9 @@ the approbation of another, as their highest object,
 teaches, that the rule of their conduct should be
 the will of beings, imperfect and erring like themselves,
 rather than the will of God, which is the only standard
-of perfection.</p>
+of perfection.
 
-<p>Having now considered female education, both in
+Having now considered female education, both in
 theory and practice, and seen, that in its present state,
 it is in fact a thing “without form and void,” the mind is
 naturally led to inquire after a remedy for the evils it
@@ -915,9 +569,9 @@ have seen the consequence. If education is a business,
 which might naturally prosper, if left to individual
 exertion, why have legislatures intermeddled with it at
 all? if it is not, why do they make their daughters
-illegitimates, and bestow all their cares upon their sons?</p>
+illegitimates, and bestow all their cares upon their sons?
 
-<p>It is the duty of a government, to do all in its power
+It is the duty of a government, to do all in its power
 to promote the present and future prosperity of the
 nation, over which it is placed. This prosperity will
 depend on the character of its citizens. The characters
@@ -928,65 +582,61 @@ as will ensure their country’s prosperity. If this is the
 case, then it is the duty of our present legislators to
 begin now, to form the characters of the next generation,
 by controling that of the females, who are to be
-their mothers, while it is yet with them a season of improvement.</p>
+their mothers, while it is yet with them a season of improvement.
 
-<p>But should the conclusion be almost admitted, that
-<span class="pagenum" id="Page_17">[Pg 17]</span>our sex too are the legitimate children of the legislature;
+But should the conclusion be almost admitted, that
+our sex too are the legitimate children of the legislature;
 and, that it is their duty to afford us a share of
 their paternal bounty; the phantom of a college-learned
 lady, would be ready to rise up, and destroy every good
 resolution, which the admission of this truth would
-naturally produce in our favour.</p>
+naturally produce in our favour.
 
-<p>To shew that it is not a masculine education which
+To shew that it is not a masculine education which
 is here recommended, and to afford a definite view of
 the manner in which a female institution might possess
 the respectability, permanency, and uniformity of operation
 of those appropriated to males; and yet differ
 from them, so as to be adapted to that difference of
 character and duties, to which the softer sex should be
-formed, is the object of the following imperfect</p>
+formed, is the object of the following imperfect
 
 
-<h3 id="SKETCH_OF_A_FEMALE_SEMINARY">
-  SKETCH OF A FEMALE SEMINARY.
-</h3>
+SKETCH OF A FEMALE SEMINARY.
 
-<p>From considering the deficiencies in boarding
+From considering the deficiencies in boarding
 schools, much may be learned, with regard to what
 would be needed, for the prosperity and usefulness of a
-public seminary for females.</p>
+public seminary for females.
 
-<p>I. There would be needed a building, with commodious
+I. There would be needed a building, with commodious
 rooms for lodging and recitation, apartments
 for the reception of apparatus, and for the accommodation
-of the domestic department.</p>
+of the domestic department.
 
-<p>II. A library, containing books on the various subjects
+II. A library, containing books on the various subjects
 in which the pupils were to receive instruction;
 musical instruments, some good paintings, to form the
 taste and serve as models for the execution of those who
 were to be instructed in that art; maps, globes, and a
-small collection of philosophical apparatus.</p>
+small collection of philosophical apparatus.
 
-<p>III. A judicious board of trust, competent and desirous
+III. A judicious board of trust, competent and desirous
 to promote its interests, would in a female, as in
 a male literary institution, be the corner stone of its
-prosperity. On this board it would depend to provide,</p>
+prosperity. On this board it would depend to provide,
 
-<p><span class="pagenum" id="Page_18">[Pg 18]</span></p>
+IV. Suitable instruction. This article may be subdivided
+under four heads.
 
-<p>IV. Suitable instruction. This article may be subdivided
-under four heads.</p>
+/*
+1. Religious and Moral.
+2. Literary.
+3. Domestic.
+4. Ornamental.
+*/
 
-<p>
-  1. Religious and Moral.<br>
-  2. Literary.<br>
-  3. Domestic.<br>
-  4. Ornamental.
-</p>
-
-<p>1. Religious and Moral. A regular attention to religious
+1. Religious and Moral. A regular attention to religious
 duties would, of course be required of the pupils
 by the laws of the institution. The trustees would be
 careful to appoint no instructors, who would not teach
@@ -997,9 +647,9 @@ desirable, that the young ladies should spend a part of
 their Sabbaths in hearing discourses relative to the peculiar
 duties of their sex. The evidences of Christianity,
 and moral philosophy, would constitute a part of
-their studies.</p>
+their studies.
 
-<p>2. Literary Instruction. To make an exact enumeration
+2. Literary Instruction. To make an exact enumeration
 of the branches of literature, which might be
 taught, would be impossible, unless the time of the
 pupils’ continuance at the seminary, and the requisites
@@ -1014,10 +664,10 @@ but no legislature has provided us the means of instruction.
 Not however, to pass lightly over this fundamental
 part of education, I will mention one or two of
 the less obvious branches of science, which, I conceive
-should engage the youthful attention of my sex.</p>
+should engage the youthful attention of my sex.
 
-<p>It is highly important, that females should be conversant
-<span class="pagenum" id="Page_19">[Pg 19]</span>with those studies, which will lead them to
+It is highly important, that females should be conversant
+with those studies, which will lead them to
 understand the operations of the human mind. The
 chief use to which the philosophy of the mind can be
 applied, is to regulate education by its rules. The
@@ -1025,9 +675,9 @@ ductile mind of the child is intrusted to the mother:
 and she ought to have every possible assistance, in acquiring
 a knowledge of this noble material, on which
 it is her business to operate, that she may best understand
-how to mould it to its most excellent form.</p>
+how to mould it to its most excellent form.
 
-<p>Natural philosophy has not often been taught to our
+Natural philosophy has not often been taught to our
 sex. Yet why should we be kept in ignorance of the
 great machinery of nature, and left to the vulgar notion,
 that nothing is curious but what deviates from
@@ -1048,19 +698,19 @@ calculated to heighten the moral taste, by bringing to
 view the majesty and beauty of order and design; and
 to enliven piety, by enabling the mind more clearly to
 perceive, throughout the manifold works of God, that
-wisdom, in which he hath made them all.</p>
+wisdom, in which he hath made them all.
 
-<p>In some of the sciences proper for our sex, the books,
+In some of the sciences proper for our sex, the books,
 written for the other, would need alteration; because,
 in some they presuppose more knowledge than female
 pupils would possess; in others, they have parts not
-<span class="pagenum" id="Page_20">[Pg 20]</span>particularly interesting to our sex, and omit subjects
+particularly interesting to our sex, and omit subjects
 immediately relating to their pursuits. There would
 likewise be needed, for a female seminary, some works,
 which I believe are no where extant, such as a systematic
-treatise on housewifery.</p>
+treatise on housewifery.
 
-<p>3. Domestic Instruction should be considered important
+3. Domestic Instruction should be considered important
 in a female seminary. It is the duty of our sex
 to regulate the internal concerns of every family; and
 unless they be properly qualified to discharge this duty,
@@ -1085,17 +735,17 @@ at the institution. The older scholars might then assist
 the superintendant in instructing the younger, and the
 whole be so arranged, that each pupil might have advantages
 to become a good domestic manager by the
-time she has completed her studies.</p>
+time she has completed her studies.
 
-<p>This plan would afford a healthy exercise. It would
+This plan would afford a healthy exercise. It would
 prevent that estrangement from domestic duties, which
 would be likely to take place in a length of time devoted
 to study, with those, to whom they were previously
-<span class="pagenum" id="Page_21">[Pg 21]</span>familiar; and would accustom those to them,
+familiar; and would accustom those to them,
 who, from ignorance, might otherwise put at hazard
-their own happiness, and the prosperity of their families.</p>
+their own happiness, and the prosperity of their families.
 
-<p>These objects might doubtless be effected by a
+These objects might doubtless be effected by a
 scheme of domestic instruction; and probably others
 of no inconsiderable importance. It is believed, that
 housewifery might be greatly improved, by being
@@ -1105,9 +755,9 @@ There are right ways of performing its various operations;
 and there are reasons why those ways are right;
 and why may not rules be formed, their reasons collected;
 and the whole be digested into a system to
-guide the learner’s practice?</p>
+guide the learner’s practice?
 
-<p>It is obvious, that theory alone, can never make a
+It is obvious, that theory alone, can never make a
 good artist; and it is equally obvious, that practice unaided
 by theory, can never correct errors, but must establish
 them. If I should perform any thing in a wrong
@@ -1117,9 +767,9 @@ it would be wrong. Without alteration there can be no
 improvement; but how are we to alter, so as to improve,
 if we are ignorant of the principles of our art, with
 which we should compare our practice, and by which
-we should regulate it?</p>
+we should regulate it?
 
-<p>In the present state of things, it is not to be expected,
+In the present state of things, it is not to be expected,
 that any material improvements in housewifery
 should be made. There being no uniformity of
 method, prevailing among different housewives, of
@@ -1128,7 +778,7 @@ not much more likely to improve the art, than a communication,
 between two mechanics of different trades,
 would be, to improve each in his respective occupation.
 But should a system of principles be philosophically
-<span class="pagenum" id="Page_22">[Pg 22]</span>arranged, and taught, both in theory and by practice,
+arranged, and taught, both in theory and by practice,
 to a large number of females, whose minds were expanded
 and strengthened by a course of literary instruction,
 those among them, of an investigating turn,
@@ -1140,9 +790,9 @@ who practise a common art, and improve each other by
 their observations and experiments; and they would also
 be capable of improving the system, by detecting its
 errors, and by making additions of new principles and
-better modes of practice.</p>
+better modes of practice.
 
-<p>4. The Ornamental branches, which I should recommend
+4. The Ornamental branches, which I should recommend
 for a female seminary, are drawing and painting,
 elegant penmanship, music, and the grace of motion.
 Needle-work is not here mentioned. The best
@@ -1153,9 +803,9 @@ to the decoration of a lady’s person, or the convenience
 and neatness of her family. But the use of
 the needle, for other purposes than these, as it affords
 little to assist in the formation of the character, I should
-regard as a waste of time.</p>
+regard as a waste of time.
 
-<p>The grace of motion, must be learnt chiefly from instruction
+The grace of motion, must be learnt chiefly from instruction
 in dancing. Other advantages besides that of
 a graceful carriage, might be derived from such instruction,
 if the lessons were judiciously timed. Exercise
@@ -1165,7 +815,7 @@ not be allowed to range unrestrained, to seek amusement
 for themselves. If it was entirely prohibited, they
 would be driven to seek it by stealth; which would lead
 them to many improprieties of conduct, and would have
-<span class="pagenum" id="Page_23">[Pg 23]</span>a pernicious effect upon their general character, by inducing
+a pernicious effect upon their general character, by inducing
 a habit of treading forbidden paths. The alternative
 that remains is to provide them with proper recreation,
 which, after the confinement of the day, they
@@ -1176,9 +826,9 @@ exercise be taken in so short a time. It has besides,
 this advantage over other amusements, that it affords
 nothing to excite the bad passions; but, on the contrary,
 its effects are, to soften the mind, to banish its
-animosities, and to open it to social impressions.</p>
+animosities, and to open it to social impressions.
 
-<p>It may be said, that dancing would dissipate the attention,
+It may be said, that dancing would dissipate the attention,
 and estrange it from study. Balls would doubtless
 have this effect; but let dancing be practised every
 day, by youth of the same sex, without change of place,
@@ -1188,9 +838,9 @@ more emotion, than any other exercise or amusement,
 but in degree, as it is of itself more pleasant. But it
 must ever be a grateful exercise to youth, as it is one,
 to which nature herself prompts them, at the sound of
-animating music.</p>
+animating music.
 
-<p>It has been doubted, whether painting and music
+It has been doubted, whether painting and music
 should be taught to young ladies, because much time
 is requisite to bring them to any considerable degree of
 perfection, and they are not immediately useful.
@@ -1202,7 +852,7 @@ point, that the music of a lady’s piano should
 rival that of her master’s; or that her drawing room
 should be decorated with her own paintings, rather
 than those of others; but it is the intrinsic advantage,
-<span class="pagenum" id="Page_24">[Pg 24]</span>which she might derive from the refinement of herself,
+which she might derive from the refinement of herself,
 that would induce me to recommend to her, an attention
 to those elegant pursuits. The harmony of sound,
 has a tendency to produce a correspondent harmony of
@@ -1210,23 +860,23 @@ soul; and that art, which obliges us to study nature, in
 order to imitate her, often enkindles the latent spark of
 taste—of sensibility for her beauties, till it glows to
 adoration for their author, and a refined love of all his
-works.</p>
+works.
 
-<p>V. There would be needed, for a female, as well as
+V. There would be needed, for a female, as well as
 for a male seminary, a system of laws and regulations,
 so arranged, that both the instructors and pupils would
 know their duty; and thus, the whole business, move
-with regularity and uniformity.</p>
+with regularity and uniformity.
 
-<p>The laws of the institution would be chiefly directed,
+The laws of the institution would be chiefly directed,
 to regulate the pupil’s qualifications for entrance, the
 kind and order of their studies, their behaviour while at
 the institution, the term allotted for the completion of
 their studies, the punishments to be inflicted on offenders
 and the rewards or honours, to be bestowed on
-the virtuous and diligent.</p>
+the virtuous and diligent.
 
-<p>The direct rewards or honors, used to stimulate the
+The direct rewards or honors, used to stimulate the
 ambition of students in colleges, are first, the certificate
 or diploma, which each receives, who passes successfully
 through the term allotted to his collegiate
@@ -1240,7 +890,7 @@ might, however, be supplied by examinations judiciously
 conducted. The leisure and inclination of both
 instructors and scholars, would combine to produce a
 thorough preparation for these; for neither would have
-<span class="pagenum" id="Page_25">[Pg 25]</span>any other public test of the success of their labors.
+any other public test of the success of their labors.
 Persons of both sexes would attend. The less entertaining
 parts, might be enlivened by interludes, where
 the pupils in painting and music, would display their
@@ -1253,9 +903,9 @@ pupils, would operate, without placing the instructors
 under the necessity of making distinctions among them,
 which are so apt to be considered as invidious; and
 which are, in our male seminaries, such fruitful sources
-of disaffection.</p>
+of disaffection.
 
-<p>Perhaps the term allotted for the routine of study at
+Perhaps the term allotted for the routine of study at
 the seminary, might be three years. The pupils, probably,
 would not be fitted to enter, till about the age of
 fourteen. Whether they attended to all, or any of the
@@ -1272,32 +922,30 @@ entered the lowest, be obliged to remain during the
 three years. Thus the term of remaining at the institution,
 might be either one, two, three, four, or more
 years; and that, without interfering with the regularity
-and uniformity of its proceedings.</p>
+and uniformity of its proceedings.
 
-<p>The writer has now given a sketch of her plan. She
+The writer has now given a sketch of her plan. She
 has by no means expressed all the ideas, which occurred
 to her concerning it. She wished to be as concise as
-<span class="pagenum" id="Page_26">[Pg 26]</span>possible, and yet afford conviction, that it is practicable,
+possible, and yet afford conviction, that it is practicable,
 to organize a system of female education, which shall
 possess the permanency, uniformity of operation, and
 respectability of our male institutions; and yet differ
 from them, so as to be adapted, to that difference of
 character, and duties, to which early instruction should
-form the softer sex.</p>
+form the softer sex.
 
-<p>It now remains, to enquire more particularly, what
-would be the benefits resulting from such a system.</p>
+It now remains, to enquire more particularly, what
+would be the benefits resulting from such a system.
 
 
-<h3 id="BENEFITS_OF_FEMALE_SEMINARIES">
-  BENEFITS OF FEMALE SEMINARIES.
-</h3>
+BENEFITS OF FEMALE SEMINARIES.
 
-<p>In inquiring, concerning the benefits of the plan proposed,
+In inquiring, concerning the benefits of the plan proposed,
 I shall proceed upon the supposition, that female
-seminaries will be patronized throughout our country.</p>
+seminaries will be patronized throughout our country.
 
-<p>Nor is this altogether a visionary supposition. If
+Nor is this altogether a visionary supposition. If
 one seminary should be well organized, its advantages
 would be found so great, that others would soon be instituted;
 and, that sufficient patronage can be found to
@@ -1316,7 +964,7 @@ her maturity, as combining what is excellent
 in mind, with what is elegant in manners. He spared no
 expense that education might realize to him, the image
 of his imagination. His daughter returned from boarding
-<span class="pagenum" id="Page_27">[Pg 27]</span>school, improved in fashionable airs, and expert in
+school, improved in fashionable airs, and expert in
 manufacturing fashionable toys; but, in her conversation,
 he sought in vain, for that refined and fertile mind,
 which he had fondly expected. Aware that his disappointment
@@ -1334,29 +982,29 @@ will have the faults of its instruction second-handed.
 Such is now the dilemma of many parents; and it is
 one, from which they cannot be extricated by their individual
 exertions. May not then the only plan, which
-promises to relieve them, expect their vigorous support.</p>
+promises to relieve them, expect their vigorous support.
 
-<p>Let us now proceed to inquire, what benefits would
-result from the establishment of female seminaries.</p>
+Let us now proceed to inquire, what benefits would
+result from the establishment of female seminaries.
 
-<p>They would constitute a grade of public education,
+They would constitute a grade of public education,
 superior to any yet known in the history of our sex;
 and through them, the lower grades of female instruction
 might be controlled. The influence of public seminaries,
 over these, would operate in two ways; first,
 by requiring certain qualifications for entrance; and
 secondly, by furnishing instructresses, initiated in their
-modes of teaching, and imbued with their maxims.</p>
+modes of teaching, and imbued with their maxims.
 
-<p>Female seminaries might be expected to have important
+Female seminaries might be expected to have important
 and happy effects, on common schools in general;
 and in the manner of operating on these, would
 probably place the business of teaching children, in
 hands now nearly useless to society; and take it from
-<span class="pagenum" id="Page_28">[Pg 28]</span>those, whose services the state wants in many other
-ways.</p>
+those, whose services the state wants in many other
+ways.
 
-<p>That nature designed for our sex the care of children,
+That nature designed for our sex the care of children,
 she has made manifest, by mental, as well as physical
 indications. She has given us, in a greater degree than
 men, the gentle arts of insinuation, to soften their
@@ -1379,9 +1027,9 @@ better than the other sex; they could afford to do it
 cheaper; and those men who would otherwise be engaged
 in this employment, might be at liberty to add to
 the wealth of the nation, by any of those thousand occupations,
-from which women are necessarily debarred.</p>
+from which women are necessarily debarred.
 
-<p>But the females, who taught children, would have
+But the females, who taught children, would have
 been themselves instructed either immediately or indirectly
 by the seminaries. Hence through these, the
 government might exercise an intimate, and most beneficial
@@ -1390,18 +1038,18 @@ turned his attention to this subject, must be aware, that
 there is great room for improvement in these, both as
 to the modes of teaching, and the things taught; and
 what method could be devised so likely to effect this
-<span class="pagenum" id="Page_29">[Pg 29]</span>improvement, as to prepare by instruction, a class of
+improvement, as to prepare by instruction, a class of
 individuals, whose interest, leisure, and natural talents,
 would combine to make them pursue it with ardour.
 Such a class of individuals would be raised up, by female
 seminaries. And therefore they would be likely
 to have highly important and happy effects on common
-schools.</p>
+schools.
 
-<p>It is believed, that such institutions, would tend to
-prolong, or perpetuate our excellent government.</p>
+It is believed, that such institutions, would tend to
+prolong, or perpetuate our excellent government.
 
-<p>An opinion too generally prevails, that our present
+An opinion too generally prevails, that our present
 form of government, though good, cannot be permanent.
 Other republics have failed, and the historian
 and philosopher have told us, that nations are like individuals;
@@ -1423,15 +1071,15 @@ their operation, then might our latest posterity
 enjoy the same happy government, with which we are
 blessed; or if but in part, then might the triumph of
 tyranny, be delayed, and a few more generations be
-free.</p>
+free.
 
-<p>Permit me then to ask the enlightened politician of
+Permit me then to ask the enlightened politician of
 my country, whether amidst his researches for these
 causes, he cannot discover one, in the neglect, which
-<span class="pagenum" id="Page_30">[Pg 30]</span>free governments, in common with others, have shown,
-to whatever regarded the formation of the female character.</p>
+free governments, in common with others, have shown,
+to whatever regarded the formation of the female character.
 
-<p>In those great republics, which have fallen of themselves,
+In those great republics, which have fallen of themselves,
 the loss of republican manners and virtues, has
 been the invariable precursor, of their loss of the republican
 form of government. But is it not in the
@@ -1440,9 +1088,9 @@ manners and morals? And if such is the extent of female
 influence, is it wonderful, that republics have
 failed, when they calmly suffered that influence, to become
 enlisted in favour of luxuries and follies, wholly
-incompatible with the existence of freedom?</p>
+incompatible with the existence of freedom?
 
-<p>It may be said, that the depravation of morals and
+It may be said, that the depravation of morals and
 manners, can be traced to the introduction of wealth,
 as its cause. But wealth will be introduced; even the
 iron laws of Lycurgus could not prevent it. Let us
@@ -1464,7 +1112,7 @@ the contagion to the whole; and if so, then has the
 experiment, whether education may not preserve public
 virtue, never yet been fairly tried. Such a part has
 been left in all former experiments. Females have been
-<span class="pagenum" id="Page_31">[Pg 31]</span>exposed to the contagion of wealth without the preservative
+exposed to the contagion of wealth without the preservative
 of a good education; and they constitute that
 part of the body politic, least endowed by nature to
 resist, most to communicate it. Nay, not merely have
@@ -1487,9 +1135,9 @@ restrain them! Like the worshipper of Moloch, the
 mother while yet yearning over the new born babe,
 tears it from the bosom, which God has swelled with
 nutrition for its support, and casts it remorseless from
-her, the victim of her unhallowed devotion!</p>
+her, the victim of her unhallowed devotion!
 
-<p>But while, with an anguished heart, I thus depict the
+But while, with an anguished heart, I thus depict the
 crimes of my sex, let not the other stand by and smile.
 Reason declares, that you are guiltier than we. You
 are our natural guardians,—our brothers,—our fathers,
@@ -1498,10 +1146,10 @@ readily take the impressions of education. Why then
 have you neglected our education? Why have you
 looked with lethargic indifference, on circumstances
 ruinous to the formation of our characters, which you
-might have controlled?</p>
+might have controlled?
 
-<p>But it may be said, the observations here made, cannot
-<span class="pagenum" id="Page_32">[Pg 32]</span>be applied to any class of females in our country.
+But it may be said, the observations here made, cannot
+be applied to any class of females in our country.
 True, they cannot yet; and if they could, it would be
 useless to make them; for when the females of any country
 have become thus debased, then, is that country
@@ -1513,51 +1161,51 @@ been slow: already do our daughters listen with surprise,
 when we tell them of the republican simplicity of
 our mothers. But our manners are not as yet so altered,
 but that, throughout our country, they are still
-marked with republican virtues.</p>
+marked with republican virtues.
 
-<p>The inquiry, to which these remarks have conducted
+The inquiry, to which these remarks have conducted
 us is this—What is offered by the plan of female education,
 here proposed, which may teach, or preserve,
 among females of wealthy families, that purity of manners,
 which is allowed, to be so essential to national
 prosperity, and so necessary, to the existence of a republican
-government.</p>
+government.
 
-<p>1. Females, by having their understandings cultivated,
+1. Females, by having their understandings cultivated,
 their reasoning powers developed and strengthened,
 may be expected to act more from the dictates of
-reason, and less from those of fashion and caprice.</p>
+reason, and less from those of fashion and caprice.
 
-<p>2. With minds thus strengthened they would be
+2. With minds thus strengthened they would be
 taught systems of morality, enforced by the sanctions
 of religion; and they might be expected to acquire juster
 and more enlarged views of their duty, and stronger
-and higher motives to its performance.</p>
+and higher motives to its performance.
 
-<p>3. This plan of education, offers all that can be done
+3. This plan of education, offers all that can be done
 to preserve female youth from a contempt of useful labour.
 The pupils would become accustomed to it, in
 conjunction with the high objects of literature, and the
 elegant pursuits of the fine arts; and it is to be hoped
-<span class="pagenum" id="Page_33">[Pg 33]</span>that both from habit and association, they might in future
-life, regard it as respectable.</p>
+that both from habit and association, they might in future
+life, regard it as respectable.
 
-<p>To this it may be added, that if housewifery could be
+To this it may be added, that if housewifery could be
 raised to a regular art, and taught upon philosophical
 principles, it would become a higher and more interesting
 occupation; and ladies of fortune, like wealthy agriculturalists,
 might find, that to regulate their business,
-was an agreeable employment.</p>
+was an agreeable employment.
 
-<p>4. The pupils might be expected to acquire a taste
+4. The pupils might be expected to acquire a taste
 for moral and intellectual pleasures, which would buoy
 them above a passion for show and parade, and which
 would make them seek to gratify the natural love of
 superiority, by endeavouring to excel others in intrinsic
 merit, rather than in the extrinsic frivolities of dress,
-furniture, and equipage.</p>
+furniture, and equipage.
 
-<p>5. By being enlightened in moral philosophy, and in
+5. By being enlightened in moral philosophy, and in
 that, which teaches the operations of the mind, females
 would be enabled to perceive the nature and extent, of
 that influence, which they possess over their children,
@@ -1576,11 +1224,9 @@ especially, when with an expanded mind, she extends
 her views to futurity, and sees her care to her offspring
 rewarded by peace of conscience, the blessings of her
 family, the prosperity of her country, and finally with
-everlasting happiness to herself and them.</p>
+everlasting happiness to herself and them.
 
-<p><span class="pagenum" id="Page_34">[Pg 34]</span></p>
-
-<p>Thus, laudable objects and employments, would be
+Thus, laudable objects and employments, would be
 furnished for the great body of females, who are not
 kept by poverty from excesses. But among these, as
 among the other sex, will be found master spirits, who
@@ -1595,9 +1241,9 @@ will remove obstructions to the course of literature,
 which has heretofore been their only honorable way to
 distinction; and we offer them a new object, worthy of
 their ambition; to govern, and improve the seminaries
-for their sex.</p>
+for their sex.
 
-<p>In calling on my patriotic countrymen, to effect so
+In calling on my patriotic countrymen, to effect so
 noble an object, the consideration of national glory,
 should not be overlooked. Ages have rolled away;—barbarians
 have trodden the weaker sex beneath their
@@ -1616,7 +1262,7 @@ to which our importance entitles us? History shows
 not that country. It shows many, whose legislatures
 have sought to improve their various vegetable productions,
 and their breeds of useful brutes; but none, whose
-<span class="pagenum" id="Page_35">[Pg 35]</span>public councils have made it an object of their deliberations,
+public councils have made it an object of their deliberations,
 to improve the character of their women. Yet
 though history lifts not her finger to such an one, anticipation
 does. She points to a nation, which, having
@@ -1632,19 +1278,14 @@ who knows how great and good a race of men, may yet
 arise from the forming hand of mothers, enlightened
 by the bounty of that beloved country,—to defend her
 liberties,—to plan her future improvement,—and to
-raise her to unparalleled glory?</p>
+raise her to unparalleled glory?
 
 
-<hr class="chap x-ebookmaker-drop">
-<div class="chapter">
-  <h2 class="nobreak" id="FOOTNOTES">
-    FOOTNOTES:
-  </h2>
-</div>
 
 
-<div class="footnote"><p><a id="Footnote_1_1" href="#FNanchor_1_1" class="label">[1]</a> Several noted writers have recommended certain accomplishments
+FOOTNOTES:
+
+
+[Footnote 1: Several noted writers have recommended certain accomplishments
 to our sex, to keep us from scandal and other vices; or to use
-Mr. Addison’s expression, “to keep us out of harm’s way.”</p></div>
-</body>
-</html>
+Mr. Addison’s expression, “to keep us out of harm’s way.”]
