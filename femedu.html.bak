@@ -373,7 +373,7 @@ of the first edition</i></p>
 
 <div class="chapter">
 <p><span class="pagenum" id="Page_2">[Pg 2]</span></p>
-<hr class="chap x-ebookmaker-drop">
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
 </div>
 
 <p><i>The following pages reproduce without change a document
@@ -406,7 +406,7 @@ to occupy.</i></p>
 
 <div class="chapter">
 <p><span class="pagenum" id="Page_3">[Pg 3]</span></p>
-<hr class="chap x-ebookmaker-drop">
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
 </div>
 
 <div class="tp2">
@@ -424,22 +424,22 @@ TO THE MEMBERS OF THE</span><br>
 <span class="tp2-l">FEMALE EDUCATION.</span></p>
 </div>
 
-<hr class="em5-double">
+<hr class="em5-double" aria-hidden="true">
 
 <p class="center tp2-m">BY EMMA WILLARD.</p>
 
-<hr class="em5-double">
+<hr class="em5-double" aria-hidden="true">
 
 <p class="center tp2-xs">SECOND EDITION.</p>
 
-<hr class="em5-double">
+<hr class="em5-double" aria-hidden="true">
 
 <p class="center"><span class="tp2-s">MIDDLEBURY:</span><br>
 <span class="tp2-xs">PRINTED BY J. W. COPELAND,</span><br>
 <span class="tp2-s">1819.</span></p>
 
 
-<hr class="chap x-ebookmaker-drop">
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
 <div class="chapter">
 
 <p><span class="pagenum" id="Page_4">[Pg 4]</span></p>
@@ -457,7 +457,7 @@ pioneer in the education of women at Middlebury, Vermont, over
 great admirer of the work of Mrs. Willard, has just left to Middlebury
 College the sum of $100,000.</p>
 
-<p><i>The Middlebury Register</i> in its issue of November 22, 1918, contains
+<p><cite>The Middlebury Register</cite> in its issue of November 22, 1918, contains
 the following interesting statement by Dr. Ezra Brainerd, president-emeritus
 of the College, indicating how Mrs. Sage became interested
 in Middlebury:</p>
@@ -494,7 +494,7 @@ the fair fruitage of the humble seed sown in faith so many years ago.”</p>
 </blockquote>
 
 
-<hr class="chap x-ebookmaker-drop">
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
 <div class="chapter">
 
 <p><span class="pagenum" id="Page_5">[Pg 5]</span></p>
@@ -1670,7 +1670,7 @@ liberties,—to plan her future improvement,—and to
 raise her to unparalleled glory?</p>
 
 
-<hr class="chap x-ebookmaker-drop">
+<hr class="chap x-ebookmaker-drop" aria-hidden="true">
 <div class="chapter">
   <h2 class="nobreak" id="FOOTNOTES">
     FOOTNOTES:
