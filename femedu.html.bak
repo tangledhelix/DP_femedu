@@ -413,6 +413,14 @@ to occupy.</i></p>
 <hr class="chap x-ebookmaker-drop" aria-hidden="true">
 </div>
 
+<!-- title page text is already included;
+     include image to display font choices -->
+<div style="margin:auto; width:15em;">
+<img src="images/i_title.png" style="width: 15em;margin:auto;" alt="" data-role="presentation">
+</div>
+
+<hr class="5em" aria-hidden="true">
+
 <div class="tp2">
 <p class="center"><span class="tp2-xs">AN</span><br>
 <span class="tp2-xl">ADDRESS</span><br>
@@ -510,7 +518,7 @@ the fair fruitage of the humble seed sown in faith so many years ago.”</p>
 </div>
 
 <div>
-  <img class="drop-cap" src="images/i_dc_t.png" width="68" alt="" data-role="presentation">
+  <img class="drop-cap" src="images/i_dc_t.png" width="70" alt="" data-role="presentation">
 </div>
 
 <p class="drop-cap noindent"><span class="upper-case">The</span>
