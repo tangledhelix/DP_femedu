@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .tp-h1-small { font-size: 45%; }
-.tp-h1-medium { font-size: 75%; }
+.tp-h1-medium { font-size: 85%; }
 .tp-author { font-size: 120%; }
 .tp-quote { width: 26em; margin-left: auto; margin-right: auto; }
 
@@ -57,7 +57,15 @@ hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
 hr.full {width: 95%; margin-left: 2.5%; margin-right: 2.5%;}
 
 hr.r5  {width: 5%; margin-top: 1em; margin-bottom: 1em; margin-left: 47.5%; margin-right: 47.5%;}
+
 hr.em5  {width: 5em; margin-top: 1.5em; margin-bottom: 1.5em; margin-left: auto; margin-right: auto;}
+
+hr.em5-double {
+  width: 5em; height: 3px;
+  border-width:0; border-top:1px solid black; border-bottom:1px solid black;
+  margin-top: 1.1em; margin-bottom: 1.1em; margin-left: auto; margin-right: auto;
+}
+
 hr.r65 {width: 65%; margin-top: 3em; margin-bottom: 3em; margin-left: 17.5%; margin-right: 17.5%;}
 
 div.chapter {page-break-before: always;}
@@ -291,12 +299,12 @@ abbr {
 abbr.spell { speak: spell-out; }
 
 /* "gray bar" blockquotes */
-blockquote {
+/*blockquote {
     border-left: .15em solid #c8c8c8;
     padding-left: .7em;
     margin-left: 4%;
     margin-right: 8%;
-}
+}*/
 
 /* don't wrap; better than invisible word joiner char? */
 .nowrap { white-space: nowrap; }
@@ -335,7 +343,7 @@ p.drop-cap::first-letter {
 
 <p><span class="pagenum" id="Page_1">[Pg 1]</span></p>
 
-<h1>
+<h1 title="A Plan For Improving Female Education">
 A &nbsp;PLAN<br>
 <span class="tp-h1-small">FOR</span><br>
 <span class="tp-h1-medium">Improving Female Education</span>
@@ -416,15 +424,15 @@ TO THE MEMBERS OF THE</span><br>
 <span class="tp2-l">FEMALE EDUCATION.</span></p>
 </div>
 
-<hr class="em5">
+<hr class="em5-double">
 
 <p class="center tp2-m">BY EMMA WILLARD.</p>
 
-<hr class="em5">
+<hr class="em5-double">
 
 <p class="center tp2-xs">SECOND EDITION.</p>
 
-<hr class="em5">
+<hr class="em5-double">
 
 <p class="center"><span class="tp2-s">MIDDLEBURY:</span><br>
 <span class="tp2-xs">PRINTED BY J. W. COPELAND,</span><br>
@@ -1006,12 +1014,12 @@ prosperity. On this board it would depend to provide,</p>
 <p>IV. Suitable instruction. This article may be subdivided
 under four heads.</p>
 
-<p>
-  1. Religious and Moral.<br>
-  2. Literary.<br>
-  3. Domestic.<br>
-  4. Ornamental.
-</p>
+<ol>
+<li>Religious and Moral.</li>
+<li>Literary.</li>
+<li>Domestic.</li>
+<li>Ornamental.</li>
+</ol>
 
 <p>1. Religious and Moral. A regular attention to religious
 duties would, of course be required of the pupils
