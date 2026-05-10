@@ -318,23 +318,27 @@ abbr.spell { speak: spell-out; }
   text-indent: -2em;
 }
 
-/* drop caps */
-p.drop-cap { text-indent: 0em; }
-p.drop-cap::first-letter {
+/* illo drop caps */
+img.drop-cap {
   float: left;
-  margin: 0 0.1em 0 0;
-  font-size: 250%;
-  line-height:0.85em;
+  margin: 0 0.5em 0 0;
 }
-.uppercase { text-transform: uppercase; }
-
-/* disable drop caps for EPUB2 */
-.x-ebookmaker-2  p.drop-cap::first-letter {
-  float: none;
-  margin: 0;
-  font-size: 100%;
+p.drop-cap:first-letter {
+  color: transparent;
+  visibility: hidden;
+  margin-left: -0.9em;
 }
-
+.x-ebookmaker img.drop-cap {
+  display: none;
+}
+.x-ebookmaker p.drop-cap:first-letter {
+  color: inherit;
+  visibility: visible;
+  margin-left: 0;
+}
+.upper-case {
+  text-transform: uppercase;
+}
 
     </style>
 </head>
@@ -505,8 +509,12 @@ the fair fruitage of the humble seed sown in faith so many years ago.”</p>
   </h2>
 </div>
 
+<div>
+  <img class="drop-cap" src="images/i_dc_t.png" width="68" alt="" data-role="presentation">
+</div>
 
-<p>The object of this Address, is to convince the
+<p class="drop-cap noindent"><span class="upper-case">The</span>
+object of this Address, is to convince the
 public, that a reform, with respect to female
 education, is necessary; that it cannot be
 effected by individual exertion, but that it
