@@ -274,6 +274,7 @@ to occupy.</i></p>
 <img src="images/i_title.png" style="width: 15em;margin:auto;" alt="" data-role="presentation">
 </div>
 
+<div style="page-break-before: always;">
 <hr class="em5" aria-hidden="true">
 
 <div class="tp2">
@@ -289,6 +290,7 @@ TO THE MEMBERS OF THE</span><br>
 <span class="tp2-xl">A &nbsp;PLAN</span><br>
 <span class="tp2-xs">FOR IMPROVING</span><br>
 <span class="tp2-l">FEMALE EDUCATION.</span></p>
+</div>
 </div>
 
 <hr class="em5-double" aria-hidden="true">
@@ -354,7 +356,7 @@ of the Troy Seminary.</p>
 of Education, Circular of Information <abbr title="Number">No.</abbr> 4, 1900; whole number
 265. On page 130, under the headline of the article, the reader is informed
 that it was ‘prepared originally for the Emma Willard Society
-of New York by Ezra Brainerd, LL. D., President of Middlebury College.’</p>
+of New York by Ezra Brainerd, <abbr class="spell">LL. D.</abbr>, President of Middlebury College.’</p>
 
 <p>“Thus it would appear probable that the 100,000 dollar bequest is
 the fair fruitage of the humble seed sown in faith so many years ago.”</p>

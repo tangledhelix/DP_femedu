@@ -493,30 +493,30 @@ e.g. for scrolling, use Shift-Option instead.
 * Also a utility `kepubify` (link below) that converts; it's unclear what this conversion does that's any better than just renaming the file. Changing the filename is enough to invoke a different / better rendering engine on Kobo devices.
 
 ### Build and upload Ebooks
-* [ ] HTML → Ebookmaker (online)
-* [ ] Optional: Convert epub3 with [kepubify](https://pgaskin.net/kepubify/try/)
-* [ ] Optional: Upload epub3 with [Send to Kindle](https://www.amazon.com/gp/sendtokindle)
-* [ ] Add epub3 to Apple Books
-* [ ] Optional: Add epub3, kepub to Dropbox for Kobo
+* [x] HTML → Ebookmaker (online)
+* [x] Optional: kepub conversion with Calibre
+* [x] Optional: Upload epub3 with [Send to Kindle](https://www.amazon.com/gp/sendtokindle)
+* [x] Add epub3 to Apple Books
+* [x] Optional: Add epub3, kepub to Dropbox for Kobo
 
 ### Ebook review
 Don't necessarily have to do *all* of these, but these are what I have.
 
-* [ ] Review Ebook ToC in at least one e-reader, for structure & content
+* [x] Review Ebook ToC in at least one e-reader, for structure & content
   * Can try using `title=` attr if a header title has footnote marker etc.
-* [ ] Mac
-  * [ ] Adobe Digital Editions (epub3)
-  * [ ] Apple Books
-  * [ ] Kindle Previewer (epub3)
-  * [ ] Calibre (epub3)
-* [ ] Phone
-  * [ ] Apple Books (iPhone)
-  * [ ] Kindle (iPhone)
-* [ ] Tablet
-  * [ ] Kindle (Android)
-  * [ ] Google Play Books - Android (Dropbox)
+* [x] Mac
+  * [x] Adobe Digital Editions (epub2)
+  * [x] Apple Books
+  * [x] Kindle Previewer (epub3)
+  * [x] Calibre (epub3)
+* [x] Phone
+  * [x] Apple Books (iPhone)
+  * [x] Kindle (iPhone)
+* [x] Tablet
+  * [x] Kindle (Android)
+  * [x] Google Play Books - Android (Dropbox)
 * [ ] E-ink
-  * [ ] Kobo Libra Colour (kepub)
+  * [x] Kobo Libra Colour (kepub)
   * [ ] Kindle Colorsoft
 
 ## Smooth Reading
