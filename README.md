@@ -61,11 +61,13 @@ p. 29: changed “analagy” to “analogy” (deceived by a false analogy)
 ### HTML file review ###
 The iPhone/iPad simulators can't use `file://` URLs. Start a local web server with `python3 -m http.server` in the project directory and going to `localhost:8000` in Safari on the device. 
 
-* [ ] Safari
-* [ ] Firefox
-* [ ] Chrome
-* [ ] iPhone simulator
-* [ ] iPad simulator
+* [x] Safari
+* [x] Firefox
+* [x] Chrome
+* [x] Vivaldi
+* [x] Edge
+* [x] iPhone simulator
+* [x] iPad simulator
 
 ### Ebook review ###
 

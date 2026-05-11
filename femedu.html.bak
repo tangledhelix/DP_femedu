@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6 {
 .tp-h1-small { font-size: 45%; }
 .tp-h1-medium { font-size: 85%; }
 .tp-author { font-size: 120%; }
-.tp-quote { width: 26em; margin-left: auto; margin-right: auto; }
+.tp-quote { width: 26em; max-width: 100%; margin-left: auto; margin-right: auto; }
 
 .tp2 { line-height: 1.75em; }
 .tp2-xs { font-size: 80%; }
@@ -143,12 +143,6 @@ p.noindent { text-indent: 0; }
 
 /* de-emphasize page numbers */
 .pagenum { color: #bbbbbb; }
-
-/* footnote block styling */
-.footnotes {
-    border: 1px dashed #aaaaaa;
-    margin-top: 1.5em;
-}
 
 /* TN styling */
 .transnote {
@@ -374,7 +368,7 @@ the fair fruitage of the humble seed sown in faith so many years ago.”</p>
 
 
   <h2 class="nobreak" id="ADDRESS_C">
-    ADDRESS, &amp;C.
+    ADDRESS, <abbr title="etc.">&amp;C.</abbr>
   </h2>
 </div>
 

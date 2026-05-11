@@ -438,7 +438,7 @@ Perform these validation steps before submitting your book. Validation is also h
   * Sentence case isn't required here (but it is on the upload form)
 * [x] Use `HTML → HTML5 Validator`. Fix any reported problems.
 * [x] Remove unused CSS. `HTML → PPhtml` can help with this. Alternatively, check manually or use a tool such as the Firefox addons Firebug (with CSS Usage extension) or Dust-Me Selectors.
-* [ ] Use `HTML → CSS Validator`. Fix any reported problems.
+* [x] Use `HTML → CSS Validator`. Fix any reported problems.
   * Validate as CSS 2.1
   * CSS3 is acceptable if current status is `REC` on [this page](https://www.w3.org/Style/CSS/current-work)
     * Look up the CSS on MDN to figure out which module it comes from; then check that module's status
@@ -447,11 +447,11 @@ Perform these validation steps before submitting your book. Validation is also h
       * `display: flex` is acceptable but `flex:` is not permitted!
       * `justify-content` may only be `center` and no other value
     * `speak-as: spell-out` if a screen reader should spell out an acronym rather than read as a word
-    * [ ] if uploading CSS3, leave a note for WWer about it.
-* [ ] Use `HTML → HTML Link Checker`. Fix any reported problems.
+    * [x] if uploading CSS3, leave a note for WWer about it.
+* [x] Use `HTML → HTML Link Checker`. Fix any reported problems.
 
 ### Compare text and HTML
-* [ ] `Tools → PPcomp...` and compare the text and html files.
+* [x] `Tools → PPcomp...` and compare the text and html files.
   * Suppress word join (NoBreak) because GG2 uses them for footnotes
 
 ### Review HTML
@@ -463,8 +463,8 @@ To use multi-touch gestures on iPhone/iPad Simulator, hold the Option key.
 This lets you do pinch gestures. To track two fingers together (no pinch),
 e.g. for scrolling, use Shift-Option instead.
 
-* [ ] Scroll through in multiple browsers (Safari, Chrome, Firefox?)
-* [ ] Pay particular attention to complex items like tables, poetry
+* [x] Scroll through in multiple browsers (Safari, Chrome, Firefox?)
+* [x] Pay particular attention to complex items like tables, poetry
 
 ## Ebook generation
 
